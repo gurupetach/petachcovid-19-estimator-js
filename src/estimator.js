@@ -1,5 +1,6 @@
 const covid19ImpactEstimator = (data) => {
-    const  {
+    const input = data;
+    return {
     region : {
         avgDailyIncomeInUsd
     },
@@ -9,7 +10,7 @@ const covid19ImpactEstimator = (data) => {
     population,
     totalHospitalBeds
 
-    } = data;
+    } 
     
     //challenge1
     const impact = {};
