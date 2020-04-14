@@ -11,6 +11,7 @@ const covid19ImpactEstimator = (data) => {
 
     } = data;
     
+    //challenge1
     const impact = {};
     const severImpact = {};
 
@@ -70,7 +71,7 @@ const covid19ImpactEstimator = (data) => {
 
     let newDay;
     const compute = population * avgDailyIncomeInUsd;
-    if (periodType == 'months'){
+    if (periodType === 'months'){
         newDay = timeToElapse * 30;
 
         impact.dollarsInFlight = {
@@ -100,10 +101,10 @@ const covid19ImpactEstimator = (data) => {
 
     return{
         data,
-        impact'
+        impact,
         severeImpact
     };
-    };
+};
 
 
 
